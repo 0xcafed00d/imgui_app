@@ -87,9 +87,6 @@ namespace ImGuiApp {
 		ImGui_ImplSDLRenderer2_NewFrame();
 		ImGui_ImplSDL2_NewFrame();
 		ImGui::NewFrame();
-		bool show_demo_window = false;
-		ImGui::ShowDemoWindow(&show_demo_window);
-
 		return running;
 	}
 
