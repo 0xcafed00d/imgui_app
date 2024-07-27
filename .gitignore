@@ -1,0 +1,12 @@
+*.o
+tac08
+win-tac08/.vs/
+win-tac08/Release/
+win-tac08/Debug/
+win-tac08.vcxproj.user
+.vscode/ipch
+bin/
+tests/dbg.lua
+build
+build_* 
+src/builtin_fs/tac08_dbg_file.cpp
