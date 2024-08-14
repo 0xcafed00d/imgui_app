@@ -129,4 +129,9 @@ namespace ImGuiApp {
 		SDL_Quit();
 	}
 
+	void get_SDL_window_and_renderer(SDL_Window** window, SDL_Renderer** renderer) {
+		*window = ImGuiApp::window;
+		*renderer = ImGuiApp::renderer;
+	}
+
 }  // namespace ImGuiApp
