@@ -1,7 +1,7 @@
 #include "imgui/imgui.h"
 
-class SDL_Window;
-class SDL_Renderer;
+struct SDL_Window;
+struct SDL_Renderer;
 
 namespace ImGuiApp {
 	bool init(const char* title, int width, int height);
