@@ -11,7 +11,7 @@ Use `FetchContent` to include lib in your project:
 include(FetchContent)
 FetchContent_Declare(
 	imgui_app
-    GIT_REPOSITORY "git@github.com:0xcafed00d/imgui_app.git"
+    GIT_REPOSITORY "https://github.com/0xcafed00d/imgui_app.git"
     GIT_TAG main
     GIT_PROGRESS TRUE
 )
@@ -34,6 +34,12 @@ target_link_libraries(my_app
   SDL2::SDL2main
   SDL2::SDL2-static
   imgui_app)
+```
+
+You can overide the location and version of SDL2 that is fetched by setting the variables `SDL2_URL` and `SDL2_TAG` in your CMakeLists.txt before you call FetchContent: 
+```cmake
+set(SDL2_URL "https://github.com/libsdl-org/SDL.git")
+set(SDL2_TAG "release-2.30.5")
 ```
 
 There are only 4 api functions, init, loop, request_quit, and shutdown:
