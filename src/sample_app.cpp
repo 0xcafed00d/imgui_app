@@ -5,9 +5,12 @@ int main(int argc, char* argv[]) {
 		return -1;
 	}
 
+	std::string text{"includes imgui_stdlib"};
+
 	while (ImGuiApp::loop()) {
 		ImGui::Begin("Hello, world!");
 		ImGui::Text("This is some useful text.");
+		ImGui::InputText("Input", &text);
 		if (ImGui::Button("exit")) {
 			ImGuiApp::request_quit();
 		}

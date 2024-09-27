@@ -27,6 +27,7 @@ add_library(imgui_app
 	src/imgui/imstb_rectpack.h
 	src/imgui/imstb_textedit.h
 	src/imgui/imstb_truetype.h
+    src/imgui/misc/cpp/imgui_stdlib.cpp
 	src/imgui/backends/imgui_impl_sdl2.cpp
 	src/imgui/backends/imgui_impl_sdl2.h
 	src/imgui/backends/imgui_impl_sdlrenderer2.cpp
